@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;1,300&display=swap');
+
 *{
 	margin: 0;
 	padding: 0;
@@ -182,11 +184,11 @@
 	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 	transform: translatey(0px);
 	animation: float 6s ease-in-out infinite;
-	img { width: 100%; height: auto; }
 }
 
+.img-rabbit-me img { width: 50%; height: auto; }
+
 .home-description{
-	font-style: italic;
 	font-family: 'Poppins', sans-serif;
 	font-size: 19px;
     padding-top: 15px;
@@ -202,18 +204,18 @@
 .bubble {
 	position: relative;
 	margin-left: 170px;
-	font-family: "Poppins";
-	font-size: 20px;
-	line-height: 24px;
-	font-weight: 100;
-	width: 220px;
+	font-family: 'Rubik', sans-serif;
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: 200;
+	max-width: 220px;
 	background: #ffffff;
 	border: 1px solid #cecece;
-	opacity: .8;
+	opacity: .9;
 	border-radius: 4px;
 	padding: 24px;
 	text-align: center;
-	color: #313131;
+	color: #363dc2;
 	text-decoration: none;
 }
   
@@ -260,12 +262,11 @@
 	.img-rabbit-me{
 		margin-top: 150px;
 		margin-left: 150px;
-		height: 320px;
+		height: 350px;
+		width: 100px;
 		align-content: center;
 		width: 50%;
-		border-radius: 50%;
-	
-		
+		border-radius: 50%;	
 	}
 
 
@@ -287,6 +288,8 @@
 	}
 	.img-rabbit-me{
 		margin-left: 60px;
+		width: 300px;
+		height: 300px;
 }
 
 }
@@ -296,6 +299,11 @@
 			height: 100vh;
 			/* overflow-x: hidden; */
 		}
+		.img-rabbit-me{
+			margin-left: 0px;
+			width: 300px;
+			height: 300px;
+	}
 	
 
 		.btn-group-vertical{
@@ -318,6 +326,7 @@
 
 .btn-rabbit{
 
+	max-width:300px;
 	color: #f9f9f9;
 	border: 1px solid #f9f9f9;
 	font-weight: bold;
@@ -343,6 +352,7 @@ p{
 
 .page-title{
 	text-transform: uppercase;
+	color: #f9f9f9;
 	font-family: 'Poppins', sans-serif;
 }
 
@@ -373,7 +383,7 @@ p{
     width: 170px;    
     font-family: 'Poppins', sans-serif;
     font-size: 17px;
-    font-style: italic;
+    /* font-style: italic; */
     text-align: center;
     display: block;
     clear: both;
@@ -399,7 +409,9 @@ p{
 	font-size: 16px;
 }
 
+
 .btn-group-vertical{
+	font-style: normal;
     font-family: 'Poppins', sans-serif;   
 }
 
@@ -409,7 +421,7 @@ p{
 	
 }
 .form-control{
-	font-style: italic;
+	/* font-style: italic; */
 	border-radius: 0;
 	font-size: 16px;
 }
@@ -455,13 +467,12 @@ p{
 
 .subtitle{
 	text-align: justify;
-	font-style: italic;
 	font-weight: 200;
-	font-size: 19px;
+	font-size: 16px;
 	color: #ffffff;
 	line-height: 28px;
 	font-family: 'Poppins', sans-serif;
-
+	font-style: normal;
 	margin-top: 15px;
 	margin-bottom: 20px;
 	padding-right: 40px;
@@ -486,6 +497,7 @@ p{
 	text-transform: uppercase;
 	left: 0;
 	top: -5px;
+	color: #f9f9f9;
 }
 
 #watermark{
@@ -494,12 +506,12 @@ p{
 	
 }
 
-.item{
+/* .item{
 	
 	background-color: #313131;
 	color: #f9f9f9;
-}
-
+} */
+/* 
 #owl-demo .item img{
     display: block;
     width: 100%;
@@ -550,15 +562,16 @@ p{
 }
 .owl-theme .owl-controls .owl-nav [class*=owl-]:hover i{
 	color: #fff;
-}
+} */
 
 #contact_right{
 	justify-content: center;
 	margin-top: -20px;
 }
-.about-container{
+.about-container {
 	margin-top: 140px;
 	padding-left: 50px;
+	margin-left: 50px;
 }
 .about-container i{
  font-size: 22px;
@@ -572,10 +585,11 @@ p{
 	font-weight: 200;
 	margin-top: 20px;
 	color: #f9f9f9;
-	font-size: 19px;
+	font-size: 16px;
 	line-height: 28px;
 	font-style: italic;
 	font-family: 'Poppins';
+	margin-left: 110px;
 	
 }
 .panel {
@@ -583,7 +597,8 @@ p{
 	position:relative;
 	top:-50px;
 	border: none;
-	background: rgba(255, 255, 255, 0.2);
+	/* background: rgba(255, 255, 255, 0.2); */
+	background-color: #4e54c8;
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 	width: 300px;
 	height: 200px;
@@ -600,12 +615,7 @@ p{
 	left:50px;
 	opacity:0;
   }
-/* //   */
-@media (max-width: 1024px) and (orientation: landscape){
-	.main{
-		height: auto;
-	}
-}
+
 .custom_btn{
   -vendor-animation-duration: 3s;
   -vendor-animation-delay: 2s;
@@ -619,6 +629,7 @@ p{
 /* About CSS */
 
 	.education{
+		
 		margin-top: -50px;
 		font-family: 'Poppins', sans-serif;
 		
@@ -691,6 +702,7 @@ p{
 
   }
   
+
 
   /* SkillSet CSS */
 
@@ -850,7 +862,7 @@ p{
 
 svg {
 	padding: 50px;
-	margin-left: 70px;
+	margin-left: 240px;
 	border: none;
 	background-color:none;
 	margin-top: 50px;
@@ -859,5 +871,41 @@ svg {
 	animation: float 4s ease-in-out infinite;
 }
 
+  /* * //   */ 
+  @media (max-width: 1024px) {
+	.main{
+		height: auto;
+	}
+	.img-rabbit-me{
+		margin-left: 100px;
+		width: 150px;
+		height: 150px;
+}
+.bubble{
+		margin-left: 100px;
+		width: 150px;
+		height: 90px;
+}
 
-  
+.about-container{
+	margin-left: 20px;
+		width: 400px;
+	overflow-wrap: normal;
+}
+.education{
+	max-width: 100%;
+	margin-left: -20px;
+}
+.timeline{
+	margin-left: -90px;
+}
+
+.contain{
+	margin-left: -75px;
+
+}
+
+svg{
+	margin-left: -10px;
+}
+}
