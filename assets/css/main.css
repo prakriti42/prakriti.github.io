@@ -326,7 +326,7 @@
 
 .btn-rabbit{
 	padding: 10px;
-	width:310px;
+	max-width:450px;
 	color: #f9f9f9;
 	border: 1px solid #f9f9f9;
 	font-weight: bold;
@@ -406,7 +406,6 @@
 
 
 .btn-group-vertical{
-	font-style: normal;
     font-family: 'Poppins', sans-serif;   
 }
 
@@ -501,63 +500,6 @@
 	
 }
 
-/* .item{
-	
-	background-color: #313131;
-	color: #f9f9f9;
-} */
-/* 
-#owl-demo .item img{
-    display: block;
-    width: 100%;
-    height: auto;
-
-}
-
-.owl-theme .owl-controls {
-    margin-top: 10px;
-    margin-right: 10px;
-    text-align: center;
-    width: 100%;
-    position: absolute;
-    top: calc(44% - 40px);
-		}
-
-.owl-next{
-	right: 0;
-	padding-right: 1px;
-
-}
-
-.owl-prev{
-	left: 0;
-	padding-left: 1px;
-}
-
-
-
-.owl-theme .owl-controls .owl-nav [class*=owl-]{
-	position: absolute;
-	border-radius: 0px;
-	font-size: 21px;
-	padding: 15px 20px;
-	margin: 0px;
-	background-color: #fff; 
-
-}
-
-.owl-theme .owl-controls .owl-nav [class*=owl-] i{
-	color: #333;
-	
-}
-
-.owl-theme .owl-controls .owl-nav [class*=owl-]:hover{
-	background-color: #bb9e7d;
-	border-color: #bb9e7d;
-}
-.owl-theme .owl-controls .owl-nav [class*=owl-]:hover i{
-	color: #fff;
-} */
 
 #contact_right{
 	justify-content: center;
@@ -878,7 +820,8 @@ svg {
 }
 
 .btn-rabbit{
-	width: 210px;
+	width: 300px;
+	font-size: 16px;
 	}
 
 .bubble{
