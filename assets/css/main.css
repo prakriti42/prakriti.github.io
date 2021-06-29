@@ -455,8 +455,13 @@
 
 .submit{
 	font-family: 'Poppins', sans-serif;
-	
+	color: #313131;
 	font-size: 16px;
+}
+
+.submit:hover{
+	color: #ffffff;
+	background-color: #4e54c8;
 }
 
 .subtitle{
@@ -782,6 +787,47 @@
 
   }
  
+  #status{
+	  outline: none;
+	  width: 50%;
+	  max-width: 250px;
+	  text-align: center;
+	  padding: 10px;
+	  margin-top: 10px;
+	  float: right;
+	  margin-right: 120px;
+	  font-family: "Poppins";
+	
+  }
+
+  #send-email:active,
+  #send-email:focus{
+	outline: none;
+  } 
+  #status.success{
+	  display: none;
+	color: #f9f9f9;
+	background-color: #52bd7e;
+	animation: status 5s ease forwards;
+  }
+
+  #status.error{
+	  display: none;
+	  background-color: #db5a5a;
+	  animation: status 5s ease forwards;
+  }
+
+  @keyframes status{
+	  0%{
+		  opacity: 1;
+		  pointer-events: all;
+	  }90%{
+
+	  }100%{
+		  opacity: 0;
+		  pointer-events: none;
+	  }
+  }
   /* Just to add real-scenario feeling */
  
   a {

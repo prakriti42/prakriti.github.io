@@ -142,3 +142,33 @@ items.each(function(){
   },800);
   j += delayItem;
 });
+
+
+
+// No formspree redirect
+
+
+var form = document.getElementById("my-form");
+    
+async function handleSubmit(event) {
+  event.preventDefault();
+  var status = document.getElementById("status");
+  var data = new FormData(event.target);
+  fetch(event.target.action, {
+    method: form.method,
+    body: data,
+    headers: {
+        'Accept': 'app lication/json'
+    }
+  }).then(response => {
+    status.style.display ="block";
+    status.innerHTML = "Thanks for the ping, I will reach back soon :)";
+    form.reset()
+  }).catch(error => {
+    status.style.display ="block";
+    status.innerHTML = "Oops! There was a problem sending your message :("
+  });
+}
+
+form.addEventListener("submit", handleSubmit)
+

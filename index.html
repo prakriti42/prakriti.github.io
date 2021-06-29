@@ -328,19 +328,22 @@
                         <p class='subtitle'>Drop me a line or two
                         </p>
                         <!-- form -->
-                        <form class="form_edit"> 
+                        <form class="form_edit" action="https://formspree.io/f/mayabora" method="POST" id="my-form"> 
                             <div class="form-group">
-                                <input type="name" class="form-control" id="exampleInputName" placeholder="Name">
+                                <input type="name" class="form-control" id="exampleInputName" placeholder="Name" name="name" required>
                             </div>
 
                             <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" name="email" required>
                             </div>
 
                             <div class="form-group">
-                            <textarea class="form-control" id="Message" rows="5" placeholder="Message"></textarea>
+                            <textarea class="form-control" id="Message" rows="5" placeholder="Message" name="message" required></textarea>
                             </div>
-                            <div class="btn btn-rabbit submit" id="send-email" onclick="sendMail()">Send Message</div>
+                            
+                                <button type="submit" class="btn btn-rabbit submit" id="send-email">Send Message</button>
+                                <div id="status" class="success"></div>
+                           
                         </form>
                     </div>
                 </div>
